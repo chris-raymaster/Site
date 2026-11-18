@@ -241,15 +241,16 @@ body, h2, h3 {
   &:hover {
     border-color: var(--primary);
   }
+  @media(prefers-color-scheme: dark) {
+    color: var(--light);
+  }
   transition: 0.15s all ease;
   font-family: "Inter", sans-serif;
   border-bottom: 0.1em solid transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-.header-link {
-    color: var(--light);
-  }
+.social {
+  display: none;
 }
 
 .hero-image {
